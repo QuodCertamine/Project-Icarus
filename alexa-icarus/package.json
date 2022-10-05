@@ -4,13 +4,17 @@
   "description": "Project Icarus's Lambda Server for Alexa-Firebase cross functionality",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "alexa-sdk": "^1.0.9",
-    "firebase-admin": "^5.8.1"
-  }
+    "firebase-admin": "^10.0.2",
+    "@snyk/protect": "latest"
+  },
+  "snyk": true
 }
